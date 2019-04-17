@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
 
   state = {
     isLoading: true,
-    sended: false,
+    sent: false,
   }
 
   componentDidMount() {
