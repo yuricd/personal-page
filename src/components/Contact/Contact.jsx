@@ -1,5 +1,6 @@
 import React from 'react';
 import { Social } from '../Social/Social';
+import queryString from 'query-string';
 import './Contact.scss'
 
 export default class Contact extends React.Component {
@@ -10,8 +11,8 @@ export default class Contact extends React.Component {
   }
 
   componentDidMount() {
-    const params = new URLSearchParams(window.location.search);
-    const sent = params.get('sent');
+    const parsed = queryString.parse(this.props.location.search);
+    const sent = parsed.sent;
 
     this.setState({
       isLoading: false,
