@@ -20,7 +20,7 @@ export default class Projects extends React.Component {
       <div className="container fadein">
         <div className="projects">
             <h3 className="page-title">
-              <span className="page-title__bars">{`//`}</span>Projects
+              <span className="page-title__bars">{`<`}</span>Projects<span className="page-title__bars">{` />`}</span>
             </h3>
             <p>Here are some of my projects - published and unpublished.</p>
             <p>Check out my <a href="https://github.com/yuricd" target="_blank" rel="noopener noreferrer">GitHub</a> to see my codes and cool stuff that I've made.</p>

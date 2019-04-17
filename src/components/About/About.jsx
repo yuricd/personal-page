@@ -21,7 +21,7 @@ export default class About extends React.Component {
           <div className="ordinary__l" />
           <div className="ordinary__r">
             <h3 className="page-title">
-              <span className="page-title__bars">{`//`}</span>About Me
+              <span className="page-title__bars">{`<`}</span>About Me<span className="page-title__bars">{` />`}</span>
             </h3>
             <div className="text">
               <p>Hi, my name is Yuri Delgado and I'm a Brazilian web developer.</p>

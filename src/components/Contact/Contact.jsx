@@ -27,7 +27,7 @@ export default class Contact extends React.Component {
       <div className="container fadein">
         <div className="contact">
           <h3 className="page-title">
-            <span className="page-title__bars">{`//`}</span>Contact
+            <span className="page-title__bars">{`<`}</span>Contact<span className="page-title__bars">{` />`}</span>
           </h3>
 
           {(sent) && <div className="message"><i className="fas fa-paper-plane" />Your message has been sent!</div>}
