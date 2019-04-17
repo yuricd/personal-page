@@ -1,0 +1,10 @@
+@import '../../styles/_default.scss';
+
+header {
+  margin: 50px 120px;
+
+  @include mobile-only {
+    display: flex;
+    justify-content: center;
+  }
+}

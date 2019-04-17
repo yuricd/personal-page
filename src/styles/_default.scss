@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Marcellus:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700');
+
+@import 'variables.scss';
+
+@mixin mobile-only {
+  @media (max-width: 800px) { @content; }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #666;
+}
+
+body {
+  background: #202227;
+  color: #FFF;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: $default-font-family;
+
+  @include mobile-only {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+a {
+  color: #FFF;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.05rem;
+  margin-bottom: 1em;
+  color: rgba(255,255,255,.9);
+
+  a {
+    color: rgb(236, 207, 38);
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Marcellus', sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #EEE;
+  font-size: 1.8rem;
+}
+
+.page-title {
+  margin-bottom: 1.2em;
+  display: block;
+}
+
+.page-title__bars {
+  color: #777;
+  margin-right: 10px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include mobile-only {
+    padding-bottom: 40px;
+  }
+}
+
+.fadein {
+  animation: fadein-animation 1s ease;
+}
+
+@keyframes fadein-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

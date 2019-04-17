@@ -1,0 +1,71 @@
+@import '../../styles/_default.scss';
+
+/*** SMOKE ***/
+.big.smoke {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: content 2s linear;
+  overflow: hidden;
+
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.s {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+
+.s.one {
+  opacity: .5;
+  transform: scale(1.5);
+  animation: smoke 150s infinite linear;
+  background: url('../../images/smoke1.png') bottom no-repeat;
+  margin-bottom: 100px;
+}
+
+.s.two {
+  width: 100%;
+  opacity: .8;
+  transform: scale(2);
+  animation: smoke 300s infinite linear;
+  background: url('../../images/smoke4.png') bottom no-repeat;
+  margin-bottom: 300px;
+}
+
+.s.three {
+  width: 100%;
+  opacity: .7;
+  transform: scale(1.7);
+  animation: smoke 600s infinite linear;
+  background: url('../../images/smoke3.png') bottom no-repeat;
+  margin-bottom: -200px;
+}
+
+.s.four {
+  width: 100%;
+  opacity: .5;
+  transform: scale(1.7);
+  animation: smoke 900s infinite linear;
+  background: url('../../images/smoke3.png') bottom no-repeat;
+  margin-left: -450px;
+}
+
+/* Smoke */
+@keyframes smoke {
+  0% {
+    left: -300px;
+    bottom: 0;
+  }
+
+  100% {
+    left: 100%;
+    bottom: 0;
+  }
+}

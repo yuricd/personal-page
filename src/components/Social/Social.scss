@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.social {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      
+      a {
+        font-size: 1.3rem;
+        opacity: .4;
+        padding: 10px;
+        margin: 5px;
+        transition: all .2s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
