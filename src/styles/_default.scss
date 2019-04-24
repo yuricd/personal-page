@@ -4,7 +4,11 @@
 @import 'variables.scss';
 
 @mixin mobile-only {
-  @media (max-width: 800px) { @content; }
+  @media (max-width: 850px) { @content; }
+}
+
+@mixin small-screen-only {
+  @media (max-width: 1540px) { @content; }
 }
 
 * {
