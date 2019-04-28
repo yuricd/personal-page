@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.scss'
 import presoounao from '../../images/presoounao.jpg';
 import customFacebook from '../../images/customize-facebook.png';
+import svgFilterEffects from '../../images/svg-filter-effects.png';
 
 export default class Projects extends React.Component {
 
@@ -28,7 +29,7 @@ export default class Projects extends React.Component {
             <div className="list-projects">
               <div className="list-projects__item">
                 <div className="list-projects__item__image">
-                  <img src={presoounao} alt="" />
+                  <img src={presoounao} alt="Preso ou Não?" />
                 </div>
                 <div className="list-projects__item__description">
                   <h4>Preso ou Não?</h4>
@@ -41,17 +42,17 @@ export default class Projects extends React.Component {
 
               <div className="list-projects__item">
                 <div className="list-projects__item__image">
-                  <img src="" alt="" />
+                  <img src={svgFilterEffects} alt="SVG Filter Effects" />
                 </div>
                 <div className="list-projects__item__description">
-                  <h4>Image Effects</h4>
-                  <p>Add 3D, mirroring, sepia tone, color overlay, snowing, etc. effects to pictures.</p>
+                  <h4>SVG FIlters to Images</h4>
+                  <p>Add 3D, sepia tone, etc. effects to pictures.</p>
                 </div>
               </div>
 
               <div className="list-projects__item">
                 <div className="list-projects__item__image">
-                  <img src={customFacebook} alt="" />
+                  <img src={customFacebook} alt="Customize Facebook extension" />
                 </div>
                 <div className="list-projects__item__description">
                   <h4>Customize Social Networks</h4>
